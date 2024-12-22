@@ -1,4 +1,6 @@
 require('dotenv').config();
+const mangoose = require("mangoose");
+mangoose.connect(Process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 let Person;
